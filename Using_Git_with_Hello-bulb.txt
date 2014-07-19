@@ -1,0 +1,204 @@
+[fredf@pcbsd-3589-kliktel] ~/kicad-flf/device_plan% ls hell*
+hello-bulb-master.zip
+
+hello-bulb-master:
+File-1309865600.pdf board               index.html          params.json
+README.md           firmware            javascripts         stylesheets
+[fredf@pcbsd-3589-kliktel] ~/kicad-flf/device_plan% git clone https://github.com/wb7odyfred/hello-bulb.git
+Cloning into 'hello-bulb'...
+remote: Counting objects: 154, done.
+remote: Compressing objects: 100% (102/102), done.
+remote: Total 154 (delta 51), reused 151 (delta 48)
+Receiving objects: 100% (154/154), 379.52 KiB | 225.00 KiB/s, done.
+Resolving deltas: 100% (51/51), done.
+Checking connectivity... done.
+[fredf@pcbsd-3589-kliktel] ~/kicad-flf/device_plan% ls -ld h*
+drwxr-xr-x  7 fredf  fredf      10 Jul 18 20:34 hello-bulb
+drwxr-xr-x  6 fredf  fredf      10 Jul 18 03:09 hello-bulb-master
+-rw-r--r--  1 fredf  fredf  402721 Jul 16 13:11 hello-bulb-master.zip
+[fredf@pcbsd-3589-kliktel] ~/kicad-flf/device_plan% ls -la hello-bulb
+total 73
+drwxr-xr-x  7 fredf  fredf    10 Jul 18 20:34 .
+drwxr-xr-x  4 fredf  fredf    18 Jul 18 20:34 ..
+drwxr-xr-x  8 fredf  fredf    13 Jul 18 20:34 .git
+-rw-r--r--  1 fredf  fredf     0 Jul 18 20:34 README.md
+drwxr-xr-x  2 fredf  fredf    17 Jul 18 20:34 board
+drwxr-xr-x  4 fredf  fredf     5 Jul 18 20:34 firmware
+-rw-r--r--  1 fredf  fredf  4242 Jul 18 20:34 index.html
+drwxr-xr-x  2 fredf  fredf     3 Jul 18 20:34 javascripts
+-rw-r--r--  1 fredf  fredf  2120 Jul 18 20:34 params.json
+drwxr-xr-x  2 fredf  fredf     4 Jul 18 20:34 stylesheets
+[fredf@pcbsd-3589-kliktel] ~/kicad-flf/device_plan% pwd[ef
+pwd[ef: Command not found.
+[fredf@pcbsd-3589-kliktel] ~/kicad-flf/device_plan% pwd
+/usr/home/fredf/kicad-flf/device_plan
+[fredf@pcbsd-3589-kliktel] ~/kicad-flf/device_plan% pwd
+/usr/home/fredf/kicad-flf/device_plan
+[fredf@pcbsd-3589-kliktel] ~/kicad-flf/device_plan% cd hello-bulb
+
+git remote add upstream https://github.com/lyase/hello-bulb.git
+git fetch upstream
+
+[fredf@pcbsd-3589-kliktel] ~/kicad-flf/device_plan/hello-bulb% git remote add upstream https://github.com/lyase/hello-bulb.git
+[fredf@pcbsd-3589-kliktel] ~/kicad-flf/device_plan/hello-bulb% pwd
+/usr/home/fredf/kicad-flf/device_plan/hello-bulb
+[fredf@pcbsd-3589-kliktel] ~/kicad-flf/device_plan/hello-bulb% get fetch upstream
+
+CORRECT>wget fetch upstream (y|n|e|a)? 
+[fredf@pcbsd-3589-kliktel] ~/kicad-flf/device_plan/hello-bulb% git fetch upstream
+remote: Counting objects: 12, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 6 (delta 2), reused 6 (delta 2)
+Unpacking objects: 100% (6/6), done.
+From https://github.com/lyase/hello-bulb
+ * [new branch]      gh-pages   -> upstream/gh-pages
+ * [new branch]      master     -> upstream/master
+[fredf@pcbsd-3589-kliktel] ~/kicad-flf/device_plan/hello-bulb% 
+
+[fredf@pcbsd-3589-kliktel] ~/kicad-flf/device_plan/hello-bulb% git remote -v
+origin	https://github.com/wb7odyfred/hello-bulb.git (fetch)
+origin	https://github.com/wb7odyfred/hello-bulb.git (push)
+upstream	https://github.com/lyase/hello-bulb.git (fetch)
+upstream	https://github.com/lyase/hello-bulb.git (push)
+[fredf@pcbsd-3589-kliktel] ~/kicad-flf/device_plan/hello-bulb% 
+
+
+[fredf@pcbsd-3589-kliktel] ~/kicad-flf/device_plan/hello-bulb% git fetch upstream
+remote: Counting objects: 12, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 6 (delta 2), reused 6 (delta 2)
+Unpacking objects: 100% (6/6), done.
+From https://github.com/lyase/hello-bulb
+ * [new branch]      gh-pages   -> upstream/gh-pages
+ * [new branch]      master     -> upstream/master
+[fredf@pcbsd-3589-kliktel] ~/kicad-flf/device_plan/hello-bulb% git remote -v
+origin	https://github.com/wb7odyfred/hello-bulb.git (fetch)
+origin	https://github.com/wb7odyfred/hello-bulb.git (push)
+upstream	https://github.com/lyase/hello-bulb.git (fetch)
+upstream	https://github.com/lyase/hello-bulb.git (push)
+[fredf@pcbsd-3589-kliktel] ~/kicad-flf/device_plan/hello-bulb% git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	Using_Git_with_Hello-bulb.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+[fredf@pcbsd-3589-kliktel] ~/kicad-flf/device_plan/hello-bulb% 
+
+[fredf@pcbsd-3589-kliktel] ~/kicad-flf/device_plan/hello-bulb% git config --list
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+remote.origin.url=https://github.com/wb7odyfred/hello-bulb.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.master.remote=origin
+branch.master.merge=refs/heads/master
+remote.upstream.url=https://github.com/lyase/hello-bulb.git
+remote.upstream.fetch=+refs/heads/*:refs/remotes/upstream/*
+[fredf@pcbsd-3589-kliktel] ~/kicad-flf/device_plan/hello-bulb% 
+
+[fredf@pcbsd-3589-kliktel] ~/kicad-flf/device_plan/hello-bulb% git config user.name
+[fredf@pcbsd-3589-kliktel] ~/kicad-flf/device_plan/hello-bulb% git config --global core.editor kate
+[fredf@pcbsd-3589-kliktel] ~/kicad-flf/device_plan/hello-bulb% git config --global user.email wb7odyfred@yahoo.com
+[fredf@pcbsd-3589-kliktel] ~/kicad-flf/device_plan/hello-bulb% git config --global user.name "Wb7ody Fred"
+[fredf@pcbsd-3589-kliktel] ~/kicad-flf/device_plan/hello-bulb% git config --global merge.tool meld
+[fredf@pcbsd-3589-kliktel] ~/kicad-flf/device_plan/hello-bulb%
+
+
+[fredf@pcbsd-3589-kliktel] ~/kicad-flf/device_plan/hello-bulb% git config --list
+core.editor=kate
+user.email=wb7odyfred@yahoo.com
+user.name=Wb7ody Fred
+merge.tool=meld
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+remote.origin.url=https://github.com/wb7odyfred/hello-bulb.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.master.remote=origin
+branch.master.merge=refs/heads/master
+remote.upstream.url=https://github.com/lyase/hello-bulb.git
+remote.upstream.fetch=+refs/heads/*:refs/remotes/upstream/*
+[fredf@pcbsd-3589-kliktel] ~/kicad-flf/device_plan/hello-bulb% 
+
+
+[fredf@pcbsd-3589-kliktel] ~/kicad-flf/device_plan/hello-bulb% git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   README.md
+	modified:   board/device_plan.cmp
+	modified:   board/device_plan.net
+	modified:   board/device_plan.pro
+	modified:   board/device_plan.sch
+	modified:   board/usb_plug.dcm
+	modified:   board/usb_plug.lib
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	Using_Git_with_Hello-bulb.txt
+	board/Electromechanical.dcm
+	board/atmel.lib
+	board/device_plan
+	board/device_plan-cache.dcm
+	board/device_plan-cache.lib
+	board/mylib/
+	documents/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[fredf@pcbsd-3589-kliktel] ~/kicad-flf/device_plan/hello-bulb% 
+
+
+[fredf@pcbsd-3589-kliktel] ~/kicad-flf/device_plan/hello-bulb% git add documents/* board/* board/mylib/*
+[fredf@pcbsd-3589-kliktel] ~/kicad-flf/device_plan/hello-bulb% git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   board/Electromechanical.dcm
+	new file:   board/atmel.lib
+	new file:   board/device_plan
+	new file:   board/device_plan-cache.dcm
+	new file:   board/device_plan-cache.lib
+	modified:   board/device_plan.cmp
+	modified:   board/device_plan.net
+	modified:   board/device_plan.pro
+	modified:   board/device_plan.sch
+	new file:   board/mylib/atmel.lib
+	new file:   board/mylib/conn-flf.lib
+	modified:   board/usb_plug.dcm
+	modified:   board/usb_plug.lib
+	new file:   documents/Arduino_ATTiny_232_pin_Connections.txt
+	new file:   documents/images/ATtiny-LED-flasher.png
+	new file:   documents/images/ATtiny2313-ports-alt-functions.png
+	new file:   documents/images/AVR_CPUs_ISP_Pins.jpg
+	new file:   documents/images/AVR_ISP_Connectors.jpg
+	new file:   documents/images/attiny2313-pinout.jpg
+	new file:   documents/images/ir_usbtiny_xs4all.gif
+	new file:   documents/images/usb2lpt_xs4all.gif
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	Using_Git_with_Hello-bulb.txt
+
+[fredf@pcbsd-3589-kliktel] ~/kicad-flf/device_plan/hello-bulb% 
+

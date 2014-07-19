@@ -1,3 +1,213 @@
-Cmp-Mod V01 Created by Cvpcb (2007-11-29-a) date = 1/10/2008-11:50:50
+Cmp-Mod V01 Created by Cvpcb (2014-jan-25)-product   date = Thu Jul 17 01:49:59 2014
+
+BeginCmp
+TimeStamp = /48E377B6;
+Reference = c1;
+ValeurCmp = 22pF;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /48E377D0;
+Reference = c2;
+ValeurCmp = 22pf;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /48E3DA82;
+Reference = C3;
+ValeurCmp = 100n;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /48E3DA29;
+Reference = C4;
+ValeurCmp = 10u;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /48D4FEA0;
+Reference = D1;
+ValeurCmp = LED;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /48D4FE94;
+Reference = D2;
+ValeurCmp = LED;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /48D4C7AE;
+Reference = D3;
+ValeurCmp = LED;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /48D4FE79;
+Reference = D4;
+ValeurCmp = LED;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /48D4FE70;
+Reference = D5;
+ValeurCmp = LED;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /48D4FE68;
+Reference = D6;
+ValeurCmp = LED;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /48D4C7BA;
+Reference = D7;
+ValeurCmp = LED;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /48E46125;
+Reference = D8;
+ValeurCmp = 3.6V;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /48E4612D;
+Reference = D9;
+ValeurCmp = 3.6V;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /48D4FEAF;
+Reference = D10;
+ValeurCmp = LED;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /48E366C2;
+Reference = J1;
+ValeurCmp = USB;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /48E374AC;
+Reference = R1;
+ValeurCmp = 68 ohms;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /48E379DF;
+Reference = R2;
+ValeurCmp = 68 ohms;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /48E37AAA;
+Reference = R3;
+ValeurCmp = 1500 ohms;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /48E367B1;
+Reference = R4;
+ValeurCmp = 10 kohms;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /48D4FECA;
+Reference = R5;
+ValeurCmp = 47 ohms;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /48D4FEC3;
+Reference = R6;
+ValeurCmp = 47 ohms;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /48D4FDB7;
+Reference = R7;
+ValeurCmp = 47 ohms;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /48D4FF09;
+Reference = R10;
+ValeurCmp = 47 ohms;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /48D4FEF2;
+Reference = R11;
+ValeurCmp = 47 ohms;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /48D4FEEA;
+Reference = R12;
+ValeurCmp = 47 ohms;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /48D4FEDC;
+Reference = R13;
+ValeurCmp = 47 ohms;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /48D4FED1;
+Reference = R14;
+ValeurCmp = 47 ohms;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /53C7576F;
+Reference = RP1;
+ValeurCmp = R_PACK4;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /48D4C6A7;
+Reference = U1;
+ValeurCmp = ATTINY2313;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /48E37730;
+Reference = x1;
+ValeurCmp = 12M;
+IdModule  = ;
+EndCmp
 
 EndListe

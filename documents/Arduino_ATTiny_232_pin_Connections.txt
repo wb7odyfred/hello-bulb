@@ -1,0 +1,74 @@
+lRead these four websites,  instructables and fibidi have many pictures
+http://www.instructables.com/id/How-to-Program-ATtiny2313-Current-and-Updated/
+http://beeforever.wordpress.com/2012/02/23/programming-attiny-2313-with-arduino-uno-r3/
+http://www.fibidi.com/arduino-programming-attiny2313/
+http://dicks.home.xs4all.nl/avr/usbtiny/
+
+
+http://beeforever.wordpress.com/2012/02/23/programming-attiny-2313-with-arduino-uno-r3/
+Basicly plug-in an Arduino to you computer, wire it through the breadboard with the ATtiny chip.
+The PIN is mapped accodring to following table
+
+Arduino PIN 	ATTiny 2313 PIN
+10 		1 – RST
+11 		17 – MOSI
+12 		18 – MISO
+13 		19 – SCK
+
+
+Connect +5V and ground (from Arduino or anywhere else) to ATtiny PIN 20 and 10.
+
+Connect the 10uF capacitor between Arduino RESET and GROUND.
+
+Connect the 100Ω resistor and LED diode (serial) between the ATtiny PIN 2 and ground.
+
+Download the arduino-tiny package and use it according your OS.
+
+Open Arduino IDE and open File->Examples->ArduinoISP, compile it and Upload to the Arduino. Connect the 10uF capacitor between Reset (longer leg) and Ground Arduino PINs. Now it serves as a programmer to the ATtiny. Change the Tools->Board->ATtiny2313@1MHz, open the File->Examples->Basics->Blink and change the PIN 13 to 1.
+Compile and upload.
+
+The LED should start blink now.
+
+http://www.instructables.com/id/How-to-Program-ATtiny2313-Current-and-Updated/
+Make the following connections. You need to be sure that you are connecting these to the ATtiny's actual pins (starting from the top left and counting up counter-clockwise) and not the name of the pin.
+
+Arduino--------Attiny2313
+  |                   |
+13------------>19
+12------------>18
+11------------>17
+10------------>1
+5v------------>20 VCC
+GND-------->10 GND
+
+Also add an LED with a resistor on the pin (#7) right next to the GND on the ATtiny2313
+
+http://www.fibidi.com/arduino-programming-attiny2313/
+
+Arduino 	ATTINY2313 	number of pin
+				on ATTINY2313
+10 		(RESET/dW) 		1
+11 		PB5 (MOSI/DI/SDA/PCINT5) 17
+12 		PB6 (MISO/DO/PCINT6) 	18
+13 		PB7 (UCSK/SCL/PCINT7) 	19
+GND 		GND 			10
+5V 		VCC 			20 
+
+
+http://www.evilmadscientist.com/2007/using-avr-microcontrollers-minimalist-target-boards/
+
+
+Now that we know where the various ISP pins of the header and the chip are, we can wire things up. 
+We need six wires (obviously)– hook MISO to MISO, MOSI to MOSI, and so on, and solder up the lines. 
+Remember to index the header from the end that you marked earlier, the end with pin 1.
+
+That’s actually all there is to it– the rest is just icing.
+
+http://www.webx.dk/avrisp-mk2-modding/index.htm   Put Voltage regulator inside Case to power target.
+
+
+
+http://startingelectronics.com/tutorials/AVR-8-microcontrollers/ATtiny2313-tutorial/P5-pin-alternate-functions/
+https://code.google.com/p/opendous/wiki/KiCADTutorialAddingLibraries   Adding Kicad Libraries Tutorial
+
+Select AVR-ISP-6  component from 2014  Atmel.lib library
